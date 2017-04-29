@@ -1,6 +1,7 @@
-# PastelFamily
-パステル家族 非公式iOSビュアー
+# GogoCinema
+Gogo Cinema Viewer for iOS  
+テレビ東京 午後のロードショー 非公式iOSビュアー
 
 ### 公式サイト
-COMICO:パステル家族
-http://www.comico.jp/articleList.nhn?titleNo=32
+午後のロードショー  
+http://www.tv-tokyo.co.jp/telecine/oa_afr_load/

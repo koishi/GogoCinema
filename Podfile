@@ -4,12 +4,12 @@
 inhibit_all_warnings!
 use_frameworks!
 
-target 'PastelFamily' do
+target 'GogoCinema' do
   pod 'Ji'
   pod 'SDWebImage'
   pod 'RealmSwift'
 end
 
-target 'PastelFamilyTests' do
+target 'GogoCinemaTests' do
 
 end
