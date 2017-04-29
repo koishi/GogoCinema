@@ -1,6 +1,6 @@
 //
 //  EpisodeTableViewCell.swift
-//  PastelFamily
+//  GogoCinema
 //
 //  Created by bs on 2015/12/06.
 //  Copyright © 2015年 bs. All rights reserved.

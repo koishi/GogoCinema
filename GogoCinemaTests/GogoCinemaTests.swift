@@ -1,15 +1,15 @@
 //
-//  PastelFamilyTests.swift
-//  PastelFamilyTests
+//  GogoCinemaTests.swift
+//  GogoCinemaTests
 //
 //  Created by bs on 2015/11/29.
 //  Copyright © 2015年 bs. All rights reserved.
 //
 
 import XCTest
-@testable import PastelFamily
+@testable import GogoCinema
 
-class PastelFamilyTests: XCTestCase {
+class GogoCinemaTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

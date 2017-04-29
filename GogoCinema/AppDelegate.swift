@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PastelFamily
+//  GogoCinema
 //
 //  Created by bs on 2015/11/29.
 //  Copyright © 2015年 bs. All rights reserved.

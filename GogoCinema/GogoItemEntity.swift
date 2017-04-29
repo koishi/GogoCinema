@@ -1,6 +1,6 @@
 //
 //  GogoItemEntity.swift
-//  PastelFamily
+//  GogoCinema
 //
 //  Created by 大石　弘一郎 on 2016/07/25.
 //  Copyright © 2016年 bs. All rights reserved.
