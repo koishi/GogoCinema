@@ -51,8 +51,8 @@ extension EpisodeListViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: CinemaTitleTableViewCell.cellIdentifier) as! CinemaTitleTableViewCell
-    let gogoTitle = GogoItemManager.sharedInstance.episodes[indexPath.row]
-    cell.gogoTitle = gogoTitle
+    let gogoItem = GogoItemManager.sharedInstance.episodes[indexPath.row]
+    cell.gogoItem = gogoItem
     return cell
   }
   

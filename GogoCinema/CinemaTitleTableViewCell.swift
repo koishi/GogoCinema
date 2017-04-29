@@ -17,15 +17,15 @@ class CinemaTitleTableViewCell: UITableViewCell {
     @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var favorite: UILabel!
 
-  var gogoTitle: GogoItemEntity? {
+  var gogoItem: GogoItemEntity? {
 
     didSet {
 
-      guard let gogoTitle = gogoTitle else {
+      guard let gogoItem = gogoItem else {
         return
       }
 
-      title.text = gogoTitle.japaneseTitle
+      title.text = gogoItem.japaneseTitle
       
 //      if let isReadFlag = episode.isReadFlag.value {
 //        if isReadFlag {
@@ -38,7 +38,7 @@ class CinemaTitleTableViewCell: UITableViewCell {
 //      if let isFavoriteFlag = episode.isFavoriteFlag.value {
 //        favoriteLabel.isHidden = !isFavoriteFlag
 //      }
-      thumbnail.sd_setImage(with: URL(string: gogoTitle.imageDataString!))
+      thumbnail.sd_setImage(with: URL(string: gogoItem.imageDataString!))
 
     }
   }
