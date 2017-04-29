@@ -57,8 +57,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="favorite" destination="6Mg-vO-84M" id="HD8-gY-4a5"/>
-                <outlet property="favoriteLabel" destination="6Mg-vO-84M" id="XID-TP-nwZ"/>
                 <outlet property="thumbnail" destination="U0L-zh-VDn" id="gpu-45-VcD"/>
                 <outlet property="title" destination="nH8-W0-AWh" id="GLT-4Z-cT1"/>
             </connections>

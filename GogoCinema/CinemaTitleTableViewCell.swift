@@ -43,7 +43,7 @@ class CinemaTitleTableViewCell: UITableViewCell {
     }
   }
 
-  static let cellIdentifier = "EpisodeListTableViewCell"
+  static let cellIdentifier = "CinemaTitleTableViewCell"
 
   override func awakeFromNib() {
     super.awakeFromNib()

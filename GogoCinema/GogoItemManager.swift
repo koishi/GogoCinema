@@ -53,6 +53,9 @@ class GogoItemManager: NSObject {
                         continue
                     }
                     let gogoItemEntity = self.gogoItemEntityGet(gogoitem: gogoitem)
+                    try! realm.write {
+                        realm.add(gogoItemEntity)
+                    }
                     print(gogoItemEntity)
                 }
             }
@@ -178,6 +181,7 @@ class GogoItemManager: NSObject {
     }
     
     func count() -> Int {
+        print(episodes.count)
         return episodes.count
     }
     
