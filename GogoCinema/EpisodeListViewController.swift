@@ -17,7 +17,7 @@ class EpisodeListViewController: UIViewController {
 
     tableView.delegate = self
     tableView.dataSource = self
-    tableView.register(UINib(nibName: EpisodeListTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: EpisodeListTableViewCell.cellIdentifier)
+    tableView.register(UINib(nibName: CinemaTitleTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: CinemaTitleTableViewCell.cellIdentifier)
 
     GogoItemManager.sharedInstance.scrapingGogoitemList({
       self.tableView.reloadData()
@@ -36,11 +36,11 @@ class EpisodeListViewController: UIViewController {
 extension EpisodeListViewController: UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let vc = self.storyboard?.instantiateViewController(withIdentifier: EpisodeDetailViewController.identifier) as! EpisodeDetailViewController
-    vc.htmlString = GogoItemManager.sharedInstance.htmlString(indexPath.row)
-    vc.episode = GogoItemManager.sharedInstance.episodes[indexPath.row]
-    vc.episodeIndex = indexPath.row
-    self.navigationController?.pushViewController(vc, animated: true)
+//    let vc = self.storyboard?.instantiateViewController(withIdentifier: EpisodeDetailViewController.identifier) as! EpisodeDetailViewController
+////    vc.htmlString = GogoItemManager.sharedInstance.htmlString(indexPath.row)
+//    vc.episode = GogoItemManager.sharedInstance.episodes[indexPath.row]
+//    vc.episodeIndex = indexPath.row
+//    self.navigationController?.pushViewController(vc, animated: true)
   }
 
 }
@@ -50,9 +50,9 @@ extension EpisodeListViewController: UITableViewDelegate {
 extension EpisodeListViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeListTableViewCell.cellIdentifier) as! EpisodeListTableViewCell
-    let episode = GogoItemManager.sharedInstance.episodes[indexPath.row]
-    cell.episode = episode
+    let cell = tableView.dequeueReusableCell(withIdentifier: CinemaTitleTableViewCell.cellIdentifier) as! CinemaTitleTableViewCell
+    let gogoTitle = GogoItemManager.sharedInstance.episodes[indexPath.row]
+    cell.gogoTitle = gogoTitle
     return cell
   }
   
