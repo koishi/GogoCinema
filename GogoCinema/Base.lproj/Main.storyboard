@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kko-E9-uhj">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kko-E9-uhj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -25,21 +29,21 @@
         <!--Episode List View Controller-->
         <scene sceneID="EE2-Il-w5c">
             <objects>
-                <viewController id="Ga3-nA-zsf" customClass="EpisodeListViewController" customModule="PastelFamily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ga3-nA-zsf" customClass="EpisodeListViewController" customModule="GogoCinema" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xWb-SG-sww"/>
                         <viewControllerLayoutGuide type="bottom" id="faM-Sa-WlG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ydc-JL-UXF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tbz-9V-lWi">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tbz-9V-lWi" firstAttribute="top" secondItem="ydc-JL-UXF" secondAttribute="topMargin" id="D2I-9r-0HI"/>
                             <constraint firstItem="tbz-9V-lWi" firstAttribute="leading" secondItem="ydc-JL-UXF" secondAttribute="leadingMargin" constant="-20" id="egO-W2-naE"/>
@@ -54,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMn-bc-xAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-330" y="150"/>
+            <point key="canvasLocation" x="-340" y="139"/>
         </scene>
         <!--Episode Detail View Controller-->
         <scene sceneID="psh-Jz-khe">
@@ -65,11 +69,11 @@
                         <viewControllerLayoutGuide type="bottom" id="oHF-mF-O9y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7tB-ye-V6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7W2-rY-dhb">
-                                <rect key="frame" x="0.0" y="546" width="600" height="54"/>
+                                <rect key="frame" x="-4" y="613" width="383" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ini-Cj-qer">
                                         <rect key="frame" x="8" y="12" width="121" height="30"/>
@@ -101,7 +105,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Pw2-np-bx5" firstAttribute="leading" secondItem="ini-Cj-qer" secondAttribute="trailing" constant="8" symbolic="YES" id="7ZW-rW-qA1"/>
                                     <constraint firstItem="ini-Cj-qer" firstAttribute="leading" secondItem="7W2-rY-dhb" secondAttribute="leading" constant="8" id="Q7P-RG-Qfh"/>
@@ -119,7 +123,7 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7W2-rY-dhb" firstAttribute="centerX" secondItem="7tB-ye-V6Q" secondAttribute="centerX" id="gAw-Nz-py6"/>
                             <constraint firstItem="7W2-rY-dhb" firstAttribute="centerY" secondItem="7tB-ye-V6Q" secondAttribute="centerY" constant="260.5" id="ibl-TA-cUg"/>
@@ -141,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDZ-Yf-spU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="150"/>
+            <point key="canvasLocation" x="359" y="139"/>
         </scene>
     </scenes>
 </document>
