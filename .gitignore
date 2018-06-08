@@ -31,3 +31,6 @@ Pods/*
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
 xcuserdata
+
+# Bundler
+.bundle
