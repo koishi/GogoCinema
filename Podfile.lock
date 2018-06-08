@@ -18,6 +18,13 @@ DEPENDENCIES:
   - RealmSwift
   - SDWebImage
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Ji
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
 SPEC CHECKSUMS:
   Ji: 21946da4e13425485ddd424edfaeeced0d80ad28
   Realm: 906be37d52f17f25484ac01643a7f26a9d3bfbd5
@@ -26,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 16d6c8b3d99d181636ff4ce689ae717b5b1e0ec3
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3
