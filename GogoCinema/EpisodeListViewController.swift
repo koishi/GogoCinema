@@ -43,6 +43,11 @@ extension EpisodeListViewController: UITableViewDelegate {
 //    self.navigationController?.pushViewController(vc, animated: true)
   }
 
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88
+    }
+
 }
 
 // MARK: - UITableViewDataSource

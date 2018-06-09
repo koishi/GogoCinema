@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CinemaTitleTableViewCell: UITableViewCell {
 
@@ -38,7 +39,13 @@ class CinemaTitleTableViewCell: UITableViewCell {
 //      if let isFavoriteFlag = episode.isFavoriteFlag.value {
 //        favoriteLabel.isHidden = !isFavoriteFlag
 //      }
-      thumbnail.sd_setImage(with: URL(string: gogoItem.imageDataString!))
+
+        if let imageDataString = gogoItem.imageDataString {
+            let url = URL(string: "http://www.tv-tokyo.co.jp" + imageDataString)
+            thumbnail.kf.setImage(with: url)
+        } else {
+            thumbnail.image = nil
+        }
 
     }
   }
