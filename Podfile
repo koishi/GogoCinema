@@ -6,8 +6,8 @@ use_frameworks!
 target 'GogoCinema' do
   inhibit_all_warnings!
   pod 'Ji'
-  pod 'SDWebImage'
   pod 'RealmSwift'
+  pod 'Kingfisher'
 end
 
 target 'GogoCinemaTests' do

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SDWebImage
 import RealmSwift
 
 class EpisodeEntity: Object {
