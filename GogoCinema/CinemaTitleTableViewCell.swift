@@ -11,53 +11,53 @@ import Kingfisher
 
 class CinemaTitleTableViewCell: UITableViewCell {
 
-//  @IBOutlet weak fileprivate var image: UIImageView!
-//  @IBOutlet weak fileprivate var title: UILabel!
-//  @IBOutlet weak fileprivate var favorite: UILabel!
+    //  @IBOutlet weak fileprivate var image: UIImageView!
+    //  @IBOutlet weak fileprivate var title: UILabel!
+    //  @IBOutlet weak fileprivate var favorite: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var favorite: UILabel!
 
-  var gogoItem: GogoItemEntity? {
+    var gogoItem: GogoItemEntity? {
 
-    didSet {
+        didSet {
 
-      guard let gogoItem = gogoItem else {
-        return
-      }
+            guard let gogoItem = gogoItem else {
+                return
+            }
 
-      title.text = gogoItem.japaneseTitle
-      
-//      if let isReadFlag = episode.isReadFlag.value {
-//        if isReadFlag {
-//          episodeTitle.textColor = UIColor.gray
-//        } else {
-//          episodeTitle.textColor = UIColor.black
-//        }
-//      }
+            title.text = gogoItem.japaneseTitle
 
-//      if let isFavoriteFlag = episode.isFavoriteFlag.value {
-//        favoriteLabel.isHidden = !isFavoriteFlag
-//      }
+            //      if let isReadFlag = episode.isReadFlag.value {
+            //        if isReadFlag {
+            //          episodeTitle.textColor = UIColor.gray
+            //        } else {
+            //          episodeTitle.textColor = UIColor.black
+            //        }
+            //      }
 
-        if let imageDataString = gogoItem.imageDataString {
-            let url = URL(string: "http://www.tv-tokyo.co.jp" + imageDataString)
-            thumbnail.kf.setImage(with: url)
-        } else {
-            thumbnail.image = nil
+            //      if let isFavoriteFlag = episode.isFavoriteFlag.value {
+            //        favoriteLabel.isHidden = !isFavoriteFlag
+            //      }
+
+            if let imageDataString = gogoItem.imageDataString {
+                let url = URL(string: "http://www.tv-tokyo.co.jp" + imageDataString)
+                thumbnail.kf.setImage(with: url)
+            } else {
+                thumbnail.image = nil
+            }
+
         }
-
     }
-  }
 
-  static let cellIdentifier = "CinemaTitleTableViewCell"
+    static let cellIdentifier = "CinemaTitleTableViewCell"
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-  }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-  }
-  
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+
 }
