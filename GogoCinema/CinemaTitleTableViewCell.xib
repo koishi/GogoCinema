@@ -45,12 +45,32 @@
                         <color key="textColor" red="0.28688442809956727" green="0.57995793358376013" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBF-XG-D56">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-t6-n2h">
+                                <rect key="frame" x="10" y="5.5" width="40" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eZc-t6-n2h" firstAttribute="centerY" secondItem="NBF-XG-D56" secondAttribute="centerY" id="Ib7-h3-Omw"/>
+                            <constraint firstAttribute="width" constant="60" id="aZi-d7-7tV"/>
+                            <constraint firstAttribute="height" constant="30" id="jsI-sE-7i3"/>
+                            <constraint firstItem="eZc-t6-n2h" firstAttribute="centerX" secondItem="NBF-XG-D56" secondAttribute="centerX" id="kAV-EV-Iac"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="U0L-zh-VDn" secondAttribute="bottom" id="136-fc-aae"/>
                     <constraint firstItem="U0L-zh-VDn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KQk-D0-uVZ"/>
+                    <constraint firstItem="NBF-XG-D56" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mar-7l-Bpf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="6Mg-vO-84M" secondAttribute="trailing" constant="-8" id="VvB-0d-HBh"/>
                     <constraint firstItem="nH8-W0-AWh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-25" id="XYw-Nz-xE9"/>
+                    <constraint firstItem="NBF-XG-D56" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iCe-BJ-jjf"/>
                     <constraint firstItem="nH8-W0-AWh" firstAttribute="leading" secondItem="U0L-zh-VDn" secondAttribute="trailing" constant="8" id="iOx-gH-XC6"/>
                     <constraint firstItem="U0L-zh-VDn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="siv-41-PUq"/>
                     <constraint firstItem="6Mg-vO-84M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="ud2-FU-yW6"/>
