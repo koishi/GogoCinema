@@ -72,15 +72,9 @@ class GogoItemManager: NSObject {
         
         /// 放映日時
         if let time = gogoitem.attributes["data-oastart"] {
-            //        let formatter = DateFormatter()
-            //        formatter.dateFormat = "yyyyMMddHHmmssSS"
-            //        if let date = formatter.date(from: time) {
-            //            formatter.dateFormat = "yyyyMMddHHmm"
-            //            gogoItemEntity.date = formatter.string(from: date)
-            //        }
             gogoItemEntity.date = time
         }
-        
+
         /// 地上波初
         if let g_red = gogoitem.xPath("span[@class='g_red']").first?.value {
             gogoItemEntity.redText = g_red

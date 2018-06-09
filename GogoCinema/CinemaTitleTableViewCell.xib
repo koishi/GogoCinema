@@ -78,6 +78,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="date" destination="eZc-t6-n2h" id="Fz0-CE-9e4"/>
                 <outlet property="thumbnail" destination="U0L-zh-VDn" id="gpu-45-VcD"/>
                 <outlet property="title" destination="nH8-W0-AWh" id="GLT-4Z-cT1"/>
             </connections>

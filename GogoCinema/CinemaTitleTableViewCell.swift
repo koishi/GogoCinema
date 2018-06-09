@@ -17,6 +17,7 @@ class CinemaTitleTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var favorite: UILabel!
+    @IBOutlet weak var date: UILabel!
 
     var gogoItem: GogoItemEntity? {
 
@@ -27,6 +28,13 @@ class CinemaTitleTableViewCell: UITableViewCell {
             }
 
             title.text = gogoItem.japaneseTitle
+
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyyMMddHHmmssSS"
+            if let dateString = gogoItem.date, let date = formatter.date(from: dateString) {
+                formatter.dateFormat = "M/d"
+                self.date.text = formatter.string(from: date)
+            }
 
             //      if let isReadFlag = episode.isReadFlag.value {
             //        if isReadFlag {
